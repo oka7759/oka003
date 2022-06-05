@@ -71,7 +71,7 @@ window.addEventListener('scroll', _.throttle(function(){
 
     $(".main-menu li a").click(function() {
         var scrollPosition = $($(this).attr("data-target")).offset().top;
-        
+        alert(scrollPosition);
        //window.scrollTo(xpos, ypos);
        // 스무스 옵션을 이용하려면 {감싸고 옵션 적용}
         window.scrollTo({ left: 0, top: scrollPosition, behavior: "smooth" });

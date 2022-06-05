@@ -19427,7 +19427,8 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 $(".main-menu li a").click(function () {
-  var scrollPosition = $($(this).attr("data-target")).offset().top; //window.scrollTo(xpos, ypos);
+  var scrollPosition = $($(this).attr("data-target")).offset().top;
+  alert(scrollPosition); //window.scrollTo(xpos, ypos);
   // 스무스 옵션을 이용하려면 {감싸고 옵션 적용}
 
   window.scrollTo({
@@ -19464,7 +19465,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63817" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49237" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
